@@ -4,19 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>Document</title>
 </head>
 <body>
-    <div>
+    <div id="main_container">
+        <div id="health_bar_container">
+            <div id="player_info_container">
+                <div id="player_icon"></div>
+                <div id="player_health"></div>
+            </div>
+            <div id="boss_health"></div>
+        </div>
         <div id="enemy"></div>
+        <div id="avatar"></div>
         <div id="user_container">
-            <div id="avatar"></div>
             <div id="actions_container">
                 <div id="attack_and_roll_container">
-                    <button>attack</button>
-                    <button>roll</button>
+                    <button class="action_button">Attack</button>
+                    <button class="action_button">Roll</button>
+                    <button id="healing_flask" class="action_button">Use Healing Flask</button>
                 </div>
-                <button id="healing_flask">Use Healing Flask</button>
             </div>
         </div>
         <div id="text_box"></div>

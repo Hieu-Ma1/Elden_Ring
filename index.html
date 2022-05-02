@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    
     <title>Document</title>
 </head>
 <body>
@@ -12,24 +13,33 @@
         <div id="health_bar_container">
             <div id="player_info_container">
                 <div id="player_icon"></div>
-                <div id="player_health"></div>
+                <div id="player_health_container">
+                    <div id="player_health"></div>
+                </div>
             </div>
-            <div id="boss_health"></div>
+            <div id="boss_health_container">
+                <div id="boss_health"></div>
+            </div>
         </div>
-        <div id="enemy"></div>
+        <div >
+            <!-- <object  id="enemy" data="./images/marg.svg" width="500px"  height="500px"> </object> -->
+            <object  id="enemy" data="./images/marg.svg" width="500px"  height="500px"> </object>
+            <div id="boss_name"></div>
+        </div>
         <div id="avatar">
             <object data="./images/player.svg" width="100%"  height="25%"> </object>
         </div>
         <div id="user_container">
             <div id="actions_container">
                 <div id="attack_and_roll_container">
-                    <button class="action_button">Attack</button>
-                    <button class="action_button">Roll</button>
+                    <button class="action_button" id="attack">Attack</button>
+                    <!-- <button class="action_button" id="dodge">Dodge</button> -->
                     <button id="healing_flask" class="action_button">Use Healing Flask</button>
                 </div>
             </div>
         </div>
         <div id="text_box"></div>
     </div>
+    <script src="./characters.js"></script>
 </body>
 </html>

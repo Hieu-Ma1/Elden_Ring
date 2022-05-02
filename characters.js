@@ -32,7 +32,6 @@ let attack = document.getElementById("attack");
 attack.addEventListener('click', () => {
     if (boss.health <= 0) {
         bosses.pop();
-        console.log(bosses)
         boss.health = 100;
     } else {
         boss.health -= 8;
@@ -75,5 +74,6 @@ const didPlayerLose = () => {
         }
     }
 }
+
 let timerId = setInterval(() =>
     bossMechanic(), 2000);
